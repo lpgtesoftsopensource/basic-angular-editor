@@ -1,0 +1,27 @@
+<div style="display:flex;width: 100%;margin: 10px;">
+
+    <mat-icon mat-icon-button (click)="setTextFormatting('bold');" class="htmlEditorButton">format_bold</mat-icon>
+    <mat-icon mat-icon-button (click)="setTextFormatting('italic');" class="htmlEditorButton">format_italic</mat-icon>
+    <mat-icon mat-icon-button (click)="setTextFormatting('underline');" class="htmlEditorButton">format_underlined</mat-icon>
+    <mat-icon mat-icon-button (click)="setTextFormatting('leftAlign');" class="htmlEditorButton">format_align_left</mat-icon>
+    <mat-icon mat-icon-button (click)="setTextFormatting('centerAlign');" class="htmlEditorButton">format_align_center</mat-icon>
+    <mat-icon mat-icon-button (click)="setTextFormatting('rightAlign');" class="htmlEditorButton">format_align_right</mat-icon>
+    <mat-icon mat-icon-button (click)="colorpicker.click();" class="htmlEditorButton">format_color_text</mat-icon>
+    <mat-icon mat-icon-button (click)="addUrl();" class="htmlEditorButton">link</mat-icon>
+  
+    <!-- hidden -->
+    <input type="color" style="width: 0px;height: 0px;" #colorpicker (change)="setColor(colorpicker.value);">
+  
+    <mat-select [(ngModel)]="fontSize" #fontSelect (selectionChange)="setFontSize(fontSelect.value)" tabIndex="-1" [style.width.px]="80">
+      <mat-option  *ngFor="let fontSize of fontSizeList" [value]="fontSize.text">
+         {{ fontSize.value }}
+      </mat-option>
+    </mat-select>
+    
+  </div>
+  
+  <div style="display:flex;width: 100%;margin: 10px;height: 200px;">
+    <div id="contentEditor" #contentEditor contenteditable="true" [innerHTML]="htmlContent" class="contentEditor" (input)="onEditorChanged($event)"
+    (paste)="pasteEvent($event)" (blur)="saveSelectedText()" style="width: 100%;height: 200px;"></div>
+  </div>
+  

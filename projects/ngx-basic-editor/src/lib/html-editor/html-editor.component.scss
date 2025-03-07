@@ -1,0 +1,20 @@
+#contentEditor {
+    border: 1px solid grey;
+    margin: 0px auto 0;
+    padding:10px;
+   }
+
+   
+   .htmlEditorButton{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    margin:2px;
+    background:lightblue!important;
+    width: 30px!important;
+    cursor:pointer;
+  }
+
+  .mat-icon{
+    font-size: 14px;
+  }
