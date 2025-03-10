@@ -1,6 +1,6 @@
 {
   "name": "ngx-basic-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/material": "^15.2.9",
     "material-icons": "^1.13.12"

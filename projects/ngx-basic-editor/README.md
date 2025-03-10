@@ -1,24 +1,33 @@
-# NgxBasicEditor
+# basic-angular-editor
+**Basic Editor**
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Basic Angular Editor easy to be integrated
 
-## Code scaffolding
+> A simple Basic Angular Editor.
+> Can be easly integrated
 
-Run `ng generate component component-name --project ngx-basic-editor` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-basic-editor`.
-> Note: Don't forget to add `--project ngx-basic-editor` or else it will be added to the default project in your `angular.json` file. 
+### Installation
 
-## Build
+How to install the component:
 
-Run `ng build ngx-basic-editor` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install basic-editor
+# or
+yarn add basic-editor
+```
 
-## Publishing
+### Usage
 
-After building your library with `ng build ngx-basic-editor`, go to the dist folder `cd dist/ngx-basic-editor` and run `npm publish`.
+**Integration in a project**
 
-## Running unit tests
+Import `ngx-basic-editor` module
 
-Run `ng test ngx-basic-editor` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```ts
+import { NgxBasicEditorModule } from 'ngx-basic-editor';
 
-## Further help
+@NgModule({
+  imports: [NgxBasicEditorModule],
+})
+export class AppModule {}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
