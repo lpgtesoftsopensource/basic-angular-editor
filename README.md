@@ -1,4 +1,12 @@
 # basic-angular-editor
+
+**ScreeShot**
+
+<p align="center">
+  <img src="https://github.com/lpgtesoftsopensource/basic-angular-editor/blob/main/BasicEditor.png" width="70%" title="hover text">
+</p>
+
+
 **Basic Editor**
 
 Basic Angular Editor easy to be integrated
